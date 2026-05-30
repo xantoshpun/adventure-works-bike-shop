@@ -50,10 +50,6 @@ End-to-end interactive Power BI dashboard for Adventure Works Bike Shop, analysi
 
 ## Dashboard Pages
 
-![Cover](images/dashboard/cover.jpeg)
-
----
-
 ### 📈 Main Dashboard
 High-level KPIs with month-over-month comparison cards, revenue trend line chart (2020–2022), orders-by-category breakdown, and a top 10 products table with custom tooltip.
 
