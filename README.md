@@ -20,9 +20,10 @@ End-to-end interactive Power BI dashboard for Adventure Works Bike Shop, analysi
 
 | Metric | Value |
 |--------|-------|
-| Total Revenue | **$24.9M** |
-| Total Profit | **$10.5M** |
-| Total Orders | **25,160** |
+| Total Revenue | **$24,914,586.82** |
+| Total Profit | **$10,457,715.43** |
+| Total Orders | **25,164** |
+| Total Returns | **1,809** |
 | Return Rate | **2.17%** (low) |
 | Unique Customers | **17,416** |
 | Avg Revenue per Customer | **$1,431** |
@@ -49,44 +50,45 @@ End-to-end interactive Power BI dashboard for Adventure Works Bike Shop, analysi
 
 ## Dashboard Pages
 
+![Cover](images/dashboard/cover.jpeg)
+
+---
+
 ### 📈 Main Dashboard
 High-level KPIs with month-over-month comparison cards, revenue trend line chart (2020–2022), orders-by-category breakdown, and a top 10 products table with custom tooltip.
 
-![Main Dashboard](images/dashboard/main_dashboard.png)
+![Main Dashboard](images/dashboard/main_dashboard.jpeg)
 
 ---
 
 ### 🌍 Map View
-Filled map visual showing geographic distribution of orders and revenue. Region slicers allow interactive filtering across North America, Europe, and Pacific markets.
+Filled map visual showing geographic distribution of orders. Region slicers (Europe / North America / Pacific) for interactive filtering. Key markets: US, Canada, UK, France, Germany, Australia.
 
-![Map View](images/dashboard/map_view.png)
+![Map View](images/dashboard/map_view.jpeg)
 
 ---
 
 ### 🔍 Product Detail
-Single-product drill-down page with:
+Single-product drill-down with:
 - Gauge visuals for monthly orders, revenue, and profit vs. targets
 - Revenue and profit trend line charts
-- **What-if parameter** for interactive price adjustment and revenue forecasting
+- **What-if parameter** — price adjustment slider → real-time adjusted profit forecast
 
-![Product Detail](images/dashboard/product_detail.png)
+![Product Detail](images/dashboard/product_detail.jpeg)
 
 ---
 
 ### 👥 Customer Detail
-Customer segmentation by income level and occupation (pie charts), revenue-per-customer trend, and top 25 customers ranked by revenue. Year slicer for time-based filtering.
+17,416 unique customers — segmented by income level and occupation (donut charts), revenue-per-customer trend, and top 100 customers ranked by revenue with year slicer.
 
-![Customer Detail](images/dashboard/customer_detail.png)
+![Customer Detail](images/dashboard/customer_detail.jpeg)
 
 ---
 
-## Data Model
+### 📅 Weekly Orders Overview
+Full weekly orders trend 2020 → 2022 showing growth trajectory. Exact KPI totals: $24,914,586.82 revenue · $10,457,715.43 profit · 25,164 orders · 1,809 returns.
 
-Star-schema relational model connecting:
-- **Fact table:** Sales transactions
-- **Dimension tables:** Products, Customers, Calendar, Geography, Product Categories
-
-![Data Model](images/data-model/data_model.png)
+![Weekly Orders](images/dashboard/weekly_orders.jpeg)
 
 ---
 
